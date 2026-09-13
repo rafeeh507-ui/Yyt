@@ -351,4 +351,21 @@
     background: #5f4927;
   }
 </style>
+  const music = document.getElementById("weddingMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+function toggleMusic() {
+  if (music.paused) {
+    music.play()
+      .then(() => {
+        musicBtn.innerHTML = "⏸ Pause Music";
+      })
+      .catch(() => {
+        alert("Song play ചെയ്യാൻ കഴിഞ്ഞില്ല. Song filename പരിശോധിക്കുക.");
+      });
+  } else {
+    music.pause();
+    musicBtn.innerHTML = "🎵 Play Music";
+  }
+}
 </html>
