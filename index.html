@@ -474,34 +474,35 @@ function updateCountdown(){
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+// =========================
+    // WEDDING MUSIC
+    // =========================
 
-/* =========================
-   WEDDING MUSIC
-   Keep wedding-song.mp3 in
-   the same GitHub folder as index.html
-   ========================= */
-const music = document.getElementById("weddingMusic");
-const musicBtn = document.getElementById("musicBtn");
+    const music = document.getElementById("weddingMusic");
+    const musicBtn = document.getElementById("musicBtn");
 
-musicBtn.addEventListener("click", async () => {
-  try {
-    if(music.paused){
-      await music.play();
-      musicBtn.textContent = "⏸ Pause Music";
-    }else{
-      music.pause();
-      musicBtn.textContent = "🎵 Play Music";
-    }
-  }catch(error){
-    console.error("Music playback error:", error);
-    alert("Music play ചെയ്യാൻ കഴിഞ്ഞില്ല. wedding-song.mp3 file index.html-ന്റെ same folder-ൽ ഉണ്ടെന്ന് പരിശോധിക്കുക.");
-  }
-});
+    musicBtn.addEventListener("click", async function () {
+      try {
+        if (music.paused) {
+          await music.play();
+          musicBtn.textContent = "⏸ Pause Music";
+        } else {
+          music.pause();
+          musicBtn.textContent = "🎵 Play Music";
+        }
+      } catch (error) {
+        console.error("Music playback error:", error);
+        alert(
+          "Music play ചെയ്യാൻ കഴിഞ്ഞില്ല. wedding-song.mp3 file GitHub Pages-ൽ available ആണെന്ന് പരിശോധിക്കുക."
+        );
+      }
+    });
 
-music.addEventListener("error", () => {
-  console.error("wedding-song.mp3 could not be loaded.");
-});
-</script>
+    music.addEventListener("error", function () {
+      console.error("wedding-song.mp3 could not be loaded.");
+    });
+  </script>
 
 </body>
 </html>
+
