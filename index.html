@@ -30,18 +30,33 @@
       justify-content: center;
       align-items: center;
       padding: 30px 18px;
+
       background:
-        radial-gradient(circle at top, rgba(255,255,255,.9), transparent 45%),
-        linear-gradient(135deg, #f8f3e9, #e8dfca);
+        radial-gradient(
+          circle at top,
+          rgba(255,255,255,.9),
+          transparent 45%
+        ),
+        linear-gradient(
+          135deg,
+          #f8f3e9,
+          #e8dfca
+        );
     }
 
     .card {
       width: 100%;
       max-width: 650px;
+
       padding: 55px 28px;
+
       border: 1px solid #b9a06a;
+
       background: rgba(255,255,255,.72);
-      box-shadow: 0 15px 45px rgba(70,50,20,.15);
+
+      box-shadow:
+        0 15px 45px rgba(70,50,20,.15);
+
       border-radius: 18px;
     }
 
@@ -139,12 +154,17 @@
     .map-btn {
       display: inline-block;
       text-decoration: none;
+
       padding: 13px 28px;
+
       border-radius: 30px;
+
       background: #806333;
       color: white;
+
       font-size: 17px;
       letter-spacing: 1px;
+
       transition: .3s;
     }
 
@@ -159,7 +179,56 @@
       color: #8a795f;
     }
 
+
+    /* =========================
+       MUSIC BUTTON
+    ========================= */
+
+    #musicBtn {
+      position: fixed;
+
+      bottom: 20px;
+      right: 20px;
+
+      z-index: 99999;
+
+      border: none;
+
+      border-radius: 30px;
+
+      padding: 12px 20px;
+
+      background: #806333;
+      color: white;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 5px 15px rgba(0,0,0,.25);
+
+      transition: .3s;
+    }
+
+    #musicBtn:hover {
+      background: #5f4927;
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
     @media (max-width: 500px) {
+
+      .card {
+        padding: 45px 20px;
+      }
+
       h1 {
         font-size: 43px;
       }
@@ -179,197 +248,392 @@
       .message {
         font-size: 17px;
       }
+
+      #musicBtn {
+        bottom: 15px;
+        right: 15px;
+
+        padding: 10px 17px;
+
+        font-size: 15px;
+      }
     }
   </style>
 </head>
 
+
 <body>
 
+
+  <!-- =========================
+       WEDDING INVITATION
+  ========================= -->
+
   <section class="hero">
+
     <div class="card">
+
 
       <div class="arabic">
         بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
       </div>
 
+
       <div class="invite">
         Wedding Invitation
       </div>
+
 
       <p class="message">
         With the blessings of Allah and the love of our families,
         we joyfully invite you to celebrate our wedding.
       </p>
 
-      <div class="divider"></div>
-
-      <h1>Fida Sherin VP</h1>
-
-      <div class="and">&amp;</div>
-
-      <h1>Muhammed Shafi</h1>
 
       <div class="divider"></div>
+
+
+      <h1>
+        Fida Sherin VP
+      </h1>
+
+
+      <div class="and">
+        &amp;
+      </div>
+
+
+      <h1>
+        Muhammed Shafi
+      </h1>
+
+
+      <div class="divider"></div>
+
 
       <div class="date">
         Thursday · 22 October 2026
       </div>
 
+
       <div class="venue">
+
         11:00 AM<br>
-        <strong>DAFFODILS Convention Centre</strong><br>
+
+        <strong>
+          DAFFODILS Convention Centre
+        </strong>
+
+        <br>
+
         HQ5X+F8W, River Bridge,<br>
+
         Perambra Chembra Rd, Menhaniam,<br>
+
         Chembra Palam, Kerala 673526
+
       </div>
+
 
       <div class="countdown-title">
         Counting the moments...
       </div>
 
+
       <div id="countdown">
 
-        <div class="time-box">
-          <strong id="days">0</strong>
-          <span>Days</span>
-        </div>
 
         <div class="time-box">
-          <strong id="hours">0</strong>
-          <span>Hours</span>
+
+          <strong id="days">
+            0
+          </strong>
+
+          <span>
+            Days
+          </span>
+
         </div>
 
-        <div class="time-box">
-          <strong id="minutes">0</strong>
-          <span>Minutes</span>
-        </div>
 
         <div class="time-box">
-          <strong id="seconds">0</strong>
-          <span>Seconds</span>
+
+          <strong id="hours">
+            0
+          </strong>
+
+          <span>
+            Hours
+          </span>
+
         </div>
+
+
+        <div class="time-box">
+
+          <strong id="minutes">
+            0
+          </strong>
+
+          <span>
+            Minutes
+          </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+          <strong id="seconds">
+            0
+          </strong>
+
+          <span>
+            Seconds
+          </span>
+
+        </div>
+
 
       </div>
+
 
       <a
         class="map-btn"
         href="https://www.google.com/maps/search/?api=1&query=HQ5X%2BF8W%2C%20DAFFODILS%20Convention%20Centre%2C%20River%20Bridge%2C%20Perambra%20Chembra%20Rd%2C%20Menhaniam%2C%20Chembra%20Palam%2C%20Kerala%20673526"
         target="_blank">
+
         📍 View Location
+
       </a>
+
 
       <footer>
         Together with their families ❤️
       </footer>
 
+
     </div>
+
   </section>
+
+
+
+  <!-- =========================
+       WEDDING MUSIC
+  ========================= -->
+
+  <audio
+    id="weddingMusic"
+    loop
+    preload="auto">
+
+    <source
+      src="./wedding-song.mp3"
+      type="audio/mpeg">
+
+  </audio>
+
+
+
+  <!-- =========================
+       MUSIC BUTTON
+  ========================= -->
+
+  <button
+    id="musicBtn"
+    type="button">
+
+    🎵 Play Music
+
+  </button>
+
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
 
   <script>
 
+
+    /* =========================
+       COUNTDOWN
+    ========================= */
+
     const weddingDate =
-      new Date("October 22, 2026 11:00:00").getTime();
+      new Date(
+        "October 22, 2026 11:00:00"
+      ).getTime();
+
 
     function updateCountdown() {
 
-      const now = new Date().getTime();
+      const now =
+        new Date().getTime();
 
-      const distance = weddingDate - now;
+
+      const distance =
+        weddingDate - now;
+
 
       if (distance <= 0) {
 
-        document.getElementById("countdown").innerHmTML =
+        document.getElementById(
+          "countdown"
+        ).innerHTML =
           "<h2>Today is the Wedding Day! ❤️</h2>";
 
         return;
+
       }
 
+
       const days =
-        Math.floor(distance / (1000 * 60 * 60 * 24));
+        Math.floor(
+          distance /
+          (1000 * 60 * 60 * 24)
+        );
+
 
       const hours =
         Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) /
+          (distance %
+          (1000 * 60 * 60 * 24)) /
           (1000 * 60 * 60)
         );
 
+
       const minutes =
         Math.floor(
-          (distance % (1000 * 60 * 60)) /
+          (distance %
+          (1000 * 60 * 60)) /
           (1000 * 60)
         );
 
+
       const seconds =
         Math.floor(
-          (distance % (1000 * 60)) / 1000
+          (distance %
+          (1000 * 60)) /
+          1000
         );
 
-      document.getElementById("days").innerText = days;
-      document.getElementById("hours").innerText = hours;
-      document.getElementById("minutes").innerText = minutes;
-      document.getElementById("seconds").innerText = seconds;
+
+      document.getElementById(
+        "days"
+      ).innerText = days;
+
+
+      document.getElementById(
+        "hours"
+      ).innerText = hours;
+
+
+      document.getElementById(
+        "minutes"
+      ).innerText = minutes;
+
+
+      document.getElementById(
+        "seconds"
+      ).innerText = seconds;
+
     }
+
 
     updateCountdown();
 
-    setInterval(updateCountdown, 1000);
+
+    setInterval(
+      updateCountdown,
+      1000
+    );
+
+
+
+    /* =========================
+       WEDDING MUSIC
+    ========================= */
+
+    const music =
+      document.getElementById(
+        "weddingMusic"
+      );
+
+
+    const musicBtn =
+      document.getElementById(
+        "musicBtn"
+      );
+
+
+    musicBtn.addEventListener(
+      "click",
+      function () {
+
+
+        if (music.paused) {
+
+
+          music.play()
+            .then(function () {
+
+              musicBtn.innerHTML =
+                "⏸ Pause Music";
+
+            })
+
+
+            .catch(function (error) {
+
+              console.log(
+                "Audio playback error:",
+                error
+              );
+
+
+              alert(
+                "Music play ചെയ്യാൻ കഴിഞ്ഞില്ല. " +
+                "wedding-song.mp3 file പരിശോധിക്കുക."
+              );
+
+            });
+
+
+        } else {
+
+
+          music.pause();
+
+
+          musicBtn.innerHTML =
+            "🎵 Play Music";
+
+        }
+
+      }
+    );
+
+
+    /* =========================
+       AUDIO ERROR CHECK
+    ========================= */
+
+    music.addEventListener(
+      "error",
+      function () {
+
+        console.log(
+          "wedding-song.mp3 could not be loaded."
+        );
+
+      }
+    );
+
 
   </script>
 
+
 </body>
-  <!-- Wedding Background Music -->
-<audio id="weddingMusic" loop>
-  <source src="./wedding-song.mp3" type="audio/mpeg">
-</audio>
-
-<button id="musicBtn" onclick="toggleMusic()">
-  🎵 Play Music
-</button>
-
-<style>
-  #musicBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-
-    border: none;
-    border-radius: 30px;
-    padding: 12px 20px;
-
-    background: #806333;
-    color: white;
-
-    font-family: "Cormorant Garamond", serif;
-    font-size: 16px;
-
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
-  }
-
-  #musicBtn:hover {
-    background: #5f4927;
-  }
-</style>
-  const music = document.getElementById("weddingMusic");
-const musicBtn = document.getElementById("musicBtn");
-
-function toggleMusic() {
-  if (music.paused) {
-    music.play()
-      .then(() => {
-        musicBtn.innerHTML = "⏸ Pause Music";
-      })
-      .catch(() => {
-        alert("Song play ചെയ്യാൻ കഴിഞ്ഞില്ല. Song filename പരിശോധിക്കുക.");
-      });
-  } else {
-    music.pause();
-    musicBtn.innerHTML = "🎵 Play Music";
-  }
-}
 </html>
-Yyt
-│
-├── index.html
-└── wedding-song.mp3
